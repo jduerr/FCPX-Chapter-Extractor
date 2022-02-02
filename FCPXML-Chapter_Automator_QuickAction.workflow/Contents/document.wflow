@@ -68,7 +68,7 @@
 				<key>Class Name</key>
 				<string>SpecifiedFilesAction</string>
 				<key>InputUUID</key>
-				<string>57420DF1-3EBB-4F6D-8AA4-85A02C696944</string>
+				<string>7C6407DF-2ACA-49FA-907E-A8504CD456C5</string>
 				<key>Keywords</key>
 				<array>
 					<string>Datei</string>
@@ -77,11 +77,9 @@
 					<string>Abfragen</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>AE14D328-D4DE-47A3-A998-0A65C73CD38C</string>
-				<key>ShowWhenRun</key>
-				<true/>
+				<string>998A0517-9FB8-49CD-B28D-670DDF90719E</string>
 				<key>UUID</key>
-				<string>7D35C95D-D936-4A20-80BD-1FF30A71410B</string>
+				<string>C4A6CA23-75D8-4177-8938-F55BD4EF2A6E</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -102,10 +100,12 @@
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>819.250000:239.000000</string>
+				<string>819.250000:360.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -291,7 +291,7 @@ for n in printList:
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>A1DC723D-5D7C-44C6-A7AD-904C9F59F388</string>
+				<string>3AD168F6-97A6-4DF1-B14D-8D705CD9A0AF</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
@@ -301,9 +301,9 @@ for n in printList:
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>27314DCD-5B02-43C6-AA84-F6713E725D07</string>
+				<string>9BF1F6AC-B8C0-4313-B04D-93FDA7A9460A</string>
 				<key>UUID</key>
-				<string>B5856472-7208-4D57-AC13-80F48A8604C4</string>
+				<string>5BEAAF98-399F-4437-B70C-1F8982BEBD93</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -376,10 +376,12 @@ for n in printList:
 						<string>4</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>819.250000:421.000000</string>
+				<string>819.250000:542.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -471,7 +473,7 @@ for n in printList:
 				<key>Class Name</key>
 				<string>AMNewTextFileAction</string>
 				<key>InputUUID</key>
-				<string>93E1F712-C84F-47F6-8446-C02A8143FFD5</string>
+				<string>3A675367-1263-410F-AEFC-116F437E9982</string>
 				<key>Keywords</key>
 				<array>
 					<string>Erstellen</string>
@@ -483,9 +485,9 @@ for n in printList:
 					<string>Dokument</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>E42412ED-840C-4F94-950A-C8370711CAB6</string>
+				<string>9EB4FBED-0908-4915-8DD9-CFD75B30A877</string>
 				<key>UUID</key>
-				<string>273A321D-8F64-400E-9D47-FD4FD4E3D9FE</string>
+				<string>E24AC7B6-6B49-416F-8649-88F801FBACE9</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -572,10 +574,12 @@ for n in printList:
 						<string>5</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>819.250000:594.000000</string>
+				<string>819.250000:715.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -585,25 +589,47 @@ for n in printList:
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>61D48ED3-A5D6-4614-9268-30675E59E7CF</key>
+		<key>0353F947-4E25-40C2-B4E5-AA23672BDF18</key>
 		<dict>
 			<key>from</key>
-			<string>B5856472-7208-4D57-AC13-80F48A8604C4 - B5856472-7208-4D57-AC13-80F48A8604C4</string>
+			<string>C4A6CA23-75D8-4177-8938-F55BD4EF2A6E - C4A6CA23-75D8-4177-8938-F55BD4EF2A6E</string>
 			<key>to</key>
-			<string>273A321D-8F64-400E-9D47-FD4FD4E3D9FE - 273A321D-8F64-400E-9D47-FD4FD4E3D9FE</string>
+			<string>5BEAAF98-399F-4437-B70C-1F8982BEBD93 - 5BEAAF98-399F-4437-B70C-1F8982BEBD93</string>
 		</dict>
-		<key>AD764AFD-0720-49E1-8FD8-F1B307DC8AE8</key>
+		<key>9B7B0488-8EC2-4A79-90C0-E0E2860EFE3F</key>
 		<dict>
 			<key>from</key>
-			<string>7D35C95D-D936-4A20-80BD-1FF30A71410B - 7D35C95D-D936-4A20-80BD-1FF30A71410B</string>
+			<string>5BEAAF98-399F-4437-B70C-1F8982BEBD93 - 5BEAAF98-399F-4437-B70C-1F8982BEBD93</string>
 			<key>to</key>
-			<string>B5856472-7208-4D57-AC13-80F48A8604C4 - B5856472-7208-4D57-AC13-80F48A8604C4</string>
+			<string>E24AC7B6-6B49-416F-8649-88F801FBACE9 - E24AC7B6-6B49-416F-8649-88F801FBACE9</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
+		<integer>1</integer>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
 </dict>
 </plist>
