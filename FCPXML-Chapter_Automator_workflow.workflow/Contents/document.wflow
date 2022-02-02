@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>509</string>
+	<key>AMApplicationVersion</key>
+	<string>2.10</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>fileNames</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Angegebene Finder-Objekte abfragen</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>fileNames</key>
+					<array/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SpecifiedFiles</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>SpecifiedFilesAction</string>
+				<key>InputUUID</key>
+				<string>57420DF1-3EBB-4F6D-8AA4-85A02C696944</string>
+				<key>Keywords</key>
+				<array>
+					<string>Datei</string>
+					<string>Auswählen</string>
+					<string>Suchen</string>
+					<string>Abfragen</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>AE14D328-D4DE-47A3-A998-0A65C73CD38C</string>
+				<key>ShowWhenRun</key>
+				<true/>
+				<key>UUID</key>
+				<string>7D35C95D-D936-4A20-80BD-1FF30A71410B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>fileNames</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>819.250000:295.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Shell-Skript ausführen</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>'''
+Author:  Johannes Dürr
+License: GPL V3
+
+Automator App is based on the python GPL V3 Script by Thomas Goodwin "Final Cut Pro X FCPXML Parser"
+Company: Geon Technologies, LLC, 2014
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
+
+
+
+Project Purpose:
+    Extract markers and time codes from Final Cut Pro X's FCPXML 1.3 formatted files
+
+Usage:
+    Pass an XML element into Marker.scanForMarker().  If markers are found, the resulting list is returned in the order of discovery.
+'''
+import sys, datetime, pdb
+from xml.etree.ElementTree import parse
+
+
+# Converts the '64bit/32bits' timecode format into seconds
+def parseFCPTimeSeconds (timeString):
+    vals = [float(n) for n in timeString.replace('s','').split('/')]
+    if 1 == len(vals):
+        val = vals[0]
+    else:
+        val = vals[0]/vals[1]
+    return val
+
+from string import Template
+from collections import OrderedDict
+from itertools import izip, repeat
+
+class DeltaTemplate(Template):
+    delimiter = "%"
+
+def strfdelta(tdelta, fmt):
+    d = {"D": tdelta.days}
+    hours, rem = divmod(tdelta.seconds, 3600)
+    minutes, seconds = divmod(rem, 60)
+    d["H"] = '{:02d}'.format(hours)
+    d["M"] = '{:02d}'.format(minutes)
+    d["S"] = '{:02d}'.format(seconds)
+    t = DeltaTemplate(fmt)
+    return t.substitute(**d)
+
+class Marker:
+    def __init__(self, name, startTime):
+        self._name = name
+        self._startTime = startTime
+
+    @property
+    def startTime(self):
+        return self._startTime
+
+    @property
+    def name(self):
+        return self._name
+
+    @staticmethod
+    def scanForMarker(element, time=[]):
+        start = offset = 0
+        try:
+            start = parseFCPTimeSeconds(element.attrib['start'])
+        except:
+            pass
+
+        try:
+            offset = parseFCPTimeSeconds(element.attrib['offset'])
+        except:
+            pass
+
+        m = []
+        if 'chapter-marker' == element.tag:
+            m.append(Marker(element.attrib['value'], start + sum(time)))
+        else:
+            time.append(offset - start)
+            for el in element:
+                m.extend(Marker.scanForMarker(el, list(time)))
+        return m
+
+
+# EXAMPLE:
+# Import file and convert it to a list of markers sorted by ID and start time
+xmlroot = parse(sys.argv[1]).getroot()
+markers = sorted(Marker.scanForMarker(xmlroot), key=lambda s: s.startTime)
+
+final_list=[]
+
+# print "RESULTING ORDERED LIST:"
+mylist = sorted(set(markers))
+unique_list = list(OrderedDict(izip(mylist, repeat(None))))
+
+for m in unique_list:
+    final_list.append("{1} {0}".format(m.name.encode('utf-8'), strfdelta(datetime.timedelta(seconds=m.startTime), '%H:%M:%S')))
+    
+printList = list(OrderedDict(izip(final_list, repeat(None))))
+printList.sort()
+
+for n in printList:
+    print n</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/usr/bin/python</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>A1DC723D-5D7C-44C6-A7AD-904C9F59F388</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Skript</string>
+					<string>Befehl</string>
+					<string>Ausführen</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>27314DCD-5B02-43C6-AA84-F6713E725D07</string>
+				<key>UUID</key>
+				<string>B5856472-7208-4D57-AC13-80F48A8604C4</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>819.250000:477.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.2.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<dict/>
+					<key>newFileFolderPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>newFileName</key>
+					<dict/>
+					<key>newFileTextEncoding</key>
+					<dict/>
+					<key>replaceExistingFiles</key>
+					<dict/>
+					<key>textFormat</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>public.text</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Text File.action</string>
+				<key>ActionName</key>
+				<string>Neue Textdatei</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<true/>
+					<key>newFileFolderPath</key>
+					<string>~/Desktop</string>
+					<key>newFileName</key>
+					<string>Ohne Titel.txt</string>
+					<key>newFileTextEncoding</key>
+					<integer>4</integer>
+					<key>replaceExistingFiles</key>
+					<integer>0</integer>
+					<key>textFormat</key>
+					<integer>1</integer>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.NewTextFile</string>
+				<key>CFBundleVersion</key>
+				<string>2.2.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMNewTextFileAction</string>
+				<key>InputUUID</key>
+				<string>93E1F712-C84F-47F6-8446-C02A8143FFD5</string>
+				<key>Keywords</key>
+				<array>
+					<string>Erstellen</string>
+					<string>Erstellen</string>
+					<string>Datei</string>
+					<string>Text</string>
+					<string>Sichern</string>
+					<string>Neu</string>
+					<string>Dokument</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>E42412ED-840C-4F94-950A-C8370711CAB6</string>
+				<key>UUID</key>
+				<string>273A321D-8F64-400E-9D47-FD4FD4E3D9FE</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>newFileTextEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>newFileFolderPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>replaceExistingFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>checkedForDefaultEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>Ohne Titel.txt</string>
+						<key>name</key>
+						<string>newFileName</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>textFormat</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>819.250000:650.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>5411331C-9A4A-4CD9-8A06-033844C5BA3A</key>
+		<dict>
+			<key>from</key>
+			<string>7D35C95D-D936-4A20-80BD-1FF30A71410B - 7D35C95D-D936-4A20-80BD-1FF30A71410B</string>
+			<key>to</key>
+			<string>B5856472-7208-4D57-AC13-80F48A8604C4 - B5856472-7208-4D57-AC13-80F48A8604C4</string>
+		</dict>
+		<key>97807FD4-2C28-41A4-9155-40BD997AE841</key>
+		<dict>
+			<key>from</key>
+			<string>B5856472-7208-4D57-AC13-80F48A8604C4 - B5856472-7208-4D57-AC13-80F48A8604C4</string>
+			<key>to</key>
+			<string>273A321D-8F64-400E-9D47-FD4FD4E3D9FE - 273A321D-8F64-400E-9D47-FD4FD4E3D9FE</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>
