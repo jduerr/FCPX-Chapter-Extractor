@@ -12,7 +12,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Requirements
 
-FCPX-Chapter-Extractor Automator workflow internally uses a python script. So you need to have python installed on your system. You can check if you already have python installed by typing '''python''' in Terminal. 
+FCPX-Chapter-Extractor Automator workflow internally uses a python script. So you need to have python2 installed on your system. You can check if you already have python installed by typing '''python''' in Terminal. 
 
 ## Usage
 
